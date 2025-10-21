@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Aeonik:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+body {
+    font-family: 'Aeonik', sans-serif;
+}
+
+/* MUI styles for News page */
+.MuiBox-root {
+    box-sizing: border-box;
+}

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://confide.example/sitemap.xml
+# Disallow any private or staging paths if present
+# Disallow: /admin/
+# Disallow: /private/
