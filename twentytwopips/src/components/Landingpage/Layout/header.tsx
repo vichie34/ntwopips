@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, Search, User, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface NavLink {
     name: string;
@@ -7,6 +8,7 @@ interface NavLink {
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     const navLinks: NavLink[] = [
         { name: "Learn Forex" },
@@ -43,7 +45,10 @@ export default function Header() {
                 {/* Icons */}
                 <div className="flex items-center space-x-4">
                     <Search className="h-5 w-5 cursor-pointer hover:text-red-500 transition" />
-                    <User className="h-5 w-5 cursor-pointer hover:text-red-500 transition" />
+                    <User
+                        className="h-5 w-5 cursor-pointer hover:text-red-500 transition"
+                        onClick={() => navigate("/dashboard")}
+                    />
                     <button
                         className="md:hidden focus:outline-none"
                         onClick={() => setMenuOpen(!menuOpen)}
