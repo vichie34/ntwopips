@@ -1,8 +1,8 @@
-import Header from "./UI/header";
-import SportsCarousel from "./UI/livesection";
-import EditorsPicks from "./UI/posts";
-import NewsSection from "./UI/news_section";
-import Footer from "./UI/footer";
+import Header from "./Layout/header";
+import SportsCarousel from "./Layout/livesection";
+import EditorsPicks from "./Layout/posts";
+import NewsSection from "./Layout/news_section";
+import Footer from "./Layout/footer";
 
 const Landingpage = () => {
     return (

@@ -26,7 +26,7 @@ export default function SportsCarousel() {
             try {
                 setLoading(true);
                 setError(null);
-                // Example API endpoint — replace with your own
+                // API endpoint
                 const res = await fetch(``);
                 if (!res.ok) throw new Error("Failed to fetch match data");
 

@@ -8,53 +8,10 @@ import {
     SendHorizonal
 } from "lucide-react";
 
-type Comment = {
-    id: number;
-    user: string;
-    text: string;
-};
-
-type Post = {
-    id: number;
-    title: string;
-    img: string;
-    user: string;
-    likes: number;
-    sentiment: "bullish" | "bearish" | null;
-    comments: Comment[];
-};
+import { Post, initialPosts } from "../../../data/postsData";
 
 export default function EditorsPicks() {
-    const [posts, setPosts] = useState<Post[]>([
-        {
-            id: 1,
-            title: "EUROPA LEAGUE WRAP: Villa win as Forest and Scottish clubs lose",
-            img: "/images/villa.png",
-            user: "John Doe",
-            likes: 0,
-            sentiment: null,
-            comments: [],
-        },
-        {
-            id: 2,
-            title:
-                "FIRST-TIMERS: Crystal Palace beat Dynamo Kyiv in Conference League opener",
-            img: "/images/palace.png",
-            user: "Sarah Lee",
-            likes: 0,
-            sentiment: null,
-            comments: [],
-        },
-        {
-            id: 3,
-            title: "SERIE A: Milan seek fifth straight win in showdown with Juventus",
-            img: "/images/milan.png",
-            user: "David Kim",
-            likes: 0,
-            sentiment: null,
-            comments: [],
-        },
-    ]);
+    const [posts, setPosts] = useState<Post[]>(initialPosts);
 
     const [newPost, setNewPost] = useState<{ title: string; img: string | null }>(
         {

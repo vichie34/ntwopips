@@ -4,6 +4,8 @@
 
 body {
     font-family: 'Aeonik', sans-serif;
+    background-color: black;
+    color: white;
 }
 
 /* MUI styles for News page */

@@ -23,7 +23,7 @@ export default function Header() {
                 <div className="flex items-center space-x-2">
                     <img
                         src="/logo-supersport.png"
-                        alt="Supersport Logo"
+                        alt="TwentyTwoPips Logo"
                         className="h-8"
                     />
                 </div>
